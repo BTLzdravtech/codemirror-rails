@@ -35,10 +35,8 @@
         if (HTMLHint && !HTMLHint.verify) {
             if (typeof HTMLHint.default !== "undefined") {
                 HTMLHint = HTMLHint.default;
-                console.log("HTMLHint default");
             } else {
                 HTMLHint = HTMLHint.HTMLHint;
-                console.log("HTMLHint else");
             }
         }
         if (!HTMLHint) HTMLHint = window.HTMLHint;
